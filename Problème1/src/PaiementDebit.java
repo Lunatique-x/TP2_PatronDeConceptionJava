@@ -4,6 +4,6 @@ public class PaiementDebit implements ModePaiement {
     }
 
     public String getType() {
-        return "débit";
+        return "debit";
     }
 }
