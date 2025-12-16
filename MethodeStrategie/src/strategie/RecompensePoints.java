@@ -10,9 +10,9 @@ public class RecompensePoints implements StrategieRecompense {
         switch(f.getModePaiement().getType()) {
             case "credit": nbPoints += f.getMontant() * 2; break;
             case "cash": nbPoints += f.getMontant(); break;
-            default: System.out.println("Aucune récompense pour ce mode de paiement."); break;
+            default: System.out.println("Aucune recompense pour ce type de paiement."); break;
         }
-        System.out.println("Points accumulés : " + nbPoints);
+        System.out.println("Points accumulers : " + nbPoints);
     }
 
     public int getNbPoints() { return nbPoints; }

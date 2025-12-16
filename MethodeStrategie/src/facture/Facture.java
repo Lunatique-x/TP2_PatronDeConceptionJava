@@ -19,7 +19,7 @@ public class Facture {
             carte.appliquerRecompense(this); // utilise la strategy
         }
 
-        System.out.println("Paiement effectué avec succès.");
+        System.out.println("Paiement effectue reussi");
     }
 
     public float getMontant() { return montant; }

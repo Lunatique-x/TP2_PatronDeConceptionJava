@@ -14,8 +14,8 @@ public class App {
         StrategieRecompense airmiles = new RecompenseAirmiles();
 
         // Cartes
-        CarteClient cartePoints = new CartePoints("Alice", "Montréal", points);
-        CarteClient carteAirmiles = new CarteAirmiles("Bob", "Montréal", airmiles);
+        CarteClient cartePoints = new CartePoints("Alice", "Montreal", points);
+        CarteClient carteAirmiles = new CarteAirmiles("Bob", "Montreal", airmiles);
 
         // Factures
         Facture f1 = new Facture(50, cash, cartePoints);

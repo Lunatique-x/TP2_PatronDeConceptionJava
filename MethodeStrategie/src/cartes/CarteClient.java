@@ -1,3 +1,4 @@
+// context
 package cartes;
 
 public abstract class CarteClient {
@@ -9,5 +10,5 @@ public abstract class CarteClient {
         this.adresse = adresse;
     }
 
-    public abstract void appliquerRecompense(MethodeStrategie.facture.Facture f);
+    public abstract void appliquerRecompense(facture.Facture f);
 }

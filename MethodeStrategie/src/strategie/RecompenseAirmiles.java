@@ -1,4 +1,4 @@
-package strategie;;
+package strategie;
 
 import facture.Facture;
 
@@ -15,14 +15,13 @@ public class RecompenseAirmiles implements StrategieRecompense {
                 nbMiles += f.getMontant() / 2;
                 break;
             default:
-                System.out.println("Aucune récompense pour ce mode de paiement.");
+                System.out.println("Aucune recompense pour ce type de paiement.");
         }
-        System.out.println("Miles accumulés : " + nbMiles);
+        System.out.println("Miles accumules : " + nbMiles);
     }
 
     public float getNbMiles() {
         return nbMiles;
     }
-}public class RecompenseAirmiles {
-
 }
+
