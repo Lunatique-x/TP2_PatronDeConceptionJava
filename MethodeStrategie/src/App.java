@@ -20,5 +20,17 @@ public class App {
         // Factures
         Facture f1 = new Facture(50, cash, cartePoints);
         Facture f2 = new Facture(100, credit, carteAirmiles);
+
+         // ===== Afficher récompenses accumulées =====
+        System.out.println("\n--- Recompenses finales ---");
+        CarteClient[] cartes = {cartePoints, carteAirmiles};
+        for (CarteClient c : cartes) {
+            System.out.println(c.getRecompense());
+        }
+
     }
+    
 }
+
+
+// vous devez executer le bin pour voir le code cd MethodesStrategie puis java -cp bin App

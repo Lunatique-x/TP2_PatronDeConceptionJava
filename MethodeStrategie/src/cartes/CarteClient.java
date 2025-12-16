@@ -11,4 +11,6 @@ public abstract class CarteClient {
     }
 
     public abstract void appliquerRecompense(facture.Facture f);
+
+      public abstract String getRecompense();
 }

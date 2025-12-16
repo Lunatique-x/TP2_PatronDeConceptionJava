@@ -8,15 +8,15 @@ public class Facture {
     private ModePaiement paiement;
     private float montant;
 
-    public Facture(float montant, ModePaiement paiement, CarteClient carte) {
+    public Facture(float montant, ModePaiement credit, CarteClient carteAirmiles) {
         this.montant = montant;
-        this.paiement = paiement;
-        this.carte = carte;
+        this.paiement = credit;
+        this.carte = carteAirmiles;
 
-        paiement.payer(montant);
+        credit.payer(montant);
 
-        if (carte != null) {
-            carte.appliquerRecompense(this); // utilise la strategy
+        if (carteAirmiles != null) {
+            carteAirmiles.appliquerRecompense(this); // utilise la strategy
         }
 
         System.out.println("Paiement effectue reussi");
