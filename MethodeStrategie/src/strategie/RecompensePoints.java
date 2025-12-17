@@ -7,7 +7,15 @@ public class RecompensePoints implements StrategieRecompense {
 
     @Override
     public void appliquer(Facture f) {
-        nbPoints += f.getMontant() * 2;
+        switch (f.getModePaiement().getType()) {
+            case "credit":
+                nbPoints += f.getMontant() * 2;
+                break;
+            case "cash":
+                nbPoints += f.getMontant();
+                break;
+        }
+            
         System.out.println("Points accumulers : " + nbPoints);
     }
 
